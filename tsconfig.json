@@ -1,16 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    "module": "ESNext" /* Specify what module code is generated. */,
-    "rootDir": "./" /* Specify the root folder within your source files. */,
-    "moduleResolution": "Node" /* Specify how TypeScript looks up a file from a given module specifier. */,
-    "outDir": "./dist" /* Specify an output folder for all emitted files. */,
-    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
-    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
-
-    /* Type Checking */
-    "strict": true /* Enable all strict type-checking options. */,
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": false,
+    "inlineSourceMap": true
   },
-  "include": ["src/**/*.ts"]
+  "ts-node": {
+    "esm": true
+  },
+  "lib": ["esnext"]
 }

@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "유토의 Mockdata 서버",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "nodemon --exec 'node --loader ts-node/esm src/app.ts'"
+    "dev": "nodemon --exec \"node --loader ts-node/esm src/app.ts\""
   },
   "author": "",
   "license": "MIT",
